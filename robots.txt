@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /assets/*.tmp
+Disallow: /*.tmp$
+Disallow: /admin/
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+Crawl-delay: 1
+Request-rate: 30/1m
+
+Sitemap: https://adanaaku.com.tr/sitemap.xml
+Sitemap: https://adanaaku.com.tr/sitemap-pages.xml

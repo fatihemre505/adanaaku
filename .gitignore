@@ -1,0 +1,34 @@
+# Dependencies
+/node_modules
+/vendor
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Vercel
+.vercel
+
+# PHP
+*.log
+php_errors.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.bak
+*.tmp
+~$*
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Build / cache output
+/dist
+/build
+/.cache
