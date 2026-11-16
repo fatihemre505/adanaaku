@@ -353,14 +353,20 @@ footer strong{color:var(--tx)}
   .hero .lead{font-size:.95rem}
   .cta-row{flex-wrap:nowrap}
   .cta-row .btn{flex:1 1 0;--p:13px 14px;font-size:.85rem;white-space:normal;text-align:center}
-  .lane{--lane:clamp(144px,22.5vh,188px)}
+  .lane{--fw:min(94vw,440px);--lane:calc(var(--fw)*.69);margin-top:.2rem}
+  .hero{padding-bottom:0;min-height:0}
+  .hero>.wrap{flex:none;align-content:start;padding-block:1.3rem .4rem}
+  .hero h1{font-size:clamp(2.1rem,11.6vw,3.6rem);margin-bottom:.9rem}
+  .hero .lead{font-size:clamp(.95rem,4.2vw,1.15rem);margin-bottom:1.2rem}
+  .chip{margin-bottom:.9rem}
+  .cta-row .btn{font-size:clamp(.85rem,3.7vw,1rem)}
   .hero{padding-bottom:0}
 }
 @media (max-width:760px) and (max-height:700px){.hero .lead{display:none}.chip{display:none}}
 @media (prefers-reduced-motion:reduce){.fk-run{left:50%;transform:translateX(-50%)!important}}
 
 @media (max-width:760px){.topbar .wrap{flex-wrap:nowrap}.topbar span,.topbar a{white-space:nowrap;font-size:.74rem}}
-@media (max-width:760px) and (min-height:760px){.hero .lead{display:block}.vis{width:240px}}
+@media (max-width:760px) and (min-height:760px){.hero .lead{display:block}.vis{width:190px;right:-64px;top:-14px}}
 @media (max-width:760px){.wafab{width:50px;height:50px;font-size:1.5rem;right:.8rem;bottom:.8rem}}
 @media (max-width:1024px) and (orientation:landscape) and (max-height:820px){
   .hero .wrap{grid-template-columns:1.25fr .75fr;gap:1.5rem}
