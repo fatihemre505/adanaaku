@@ -336,34 +336,11 @@ function ico($n, $c = '') { return '<svg class="ic ' . $c . '" aria-hidden="true
     <div class="road"></div>
     <div class="fk-run">
       <div class="fk-bob">
-      <svg class="fk" viewBox="0 0 230 150">
-        <defs>
-          <linearGradient id="fkb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc247"/><stop offset="1" stop-color="#ff6a1a"/></linearGradient>
-          <linearGradient id="fkc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2dff9a"/><stop offset="1" stop-color="#0a8f55"/></linearGradient>
-        </defs>
-        <rect x="150" y="14" width="9" height="112" rx="3" fill="#2a3346" stroke="#8b96ab" stroke-width="1.5"/>
-        <rect x="161" y="14" width="5" height="112" rx="2" fill="#1b2232" stroke="#5b667c" stroke-width="1.2"/>
-        <g class="lift">
-          <rect x="153" y="82" width="12" height="40" rx="2" fill="#3a455c" stroke="#ffb020" stroke-width="1.5"/>
-          <rect x="165" y="116" width="62" height="6" rx="2" fill="#aab4c8"/>
-          <rect x="172" y="76" width="50" height="40" rx="6" fill="url(#fkc)" stroke="#d6ffe9" stroke-opacity=".6" stroke-width="1.5"/>
-          <rect x="182" y="70" width="10" height="7" rx="2" fill="#d6ffe9"/><rect x="202" y="70" width="10" height="7" rx="2" fill="#d6ffe9"/>
-          <path d="M200 84l-9 14h8l-3 11 11-16h-8z" fill="#fff"/>
-        </g>
-        <path d="M14 112V70q0-14 14-14h98q10 0 14 10l6 14v32z" fill="url(#fkb)" stroke="#ffd98a" stroke-width="1.5"/>
-        <path d="M14 112V84h34v28z" fill="#1a1f2d" opacity=".35"/>
-        <rect x="86" y="68" width="38" height="14" rx="3" fill="#0f1320" opacity=".55"/>
-        <path d="M52 56V20M118 56V20M44 20h86" stroke="#e8edf6" stroke-width="4" stroke-linecap="round" fill="none"/>
-        <rect x="58" y="36" width="30" height="20" rx="5" fill="#101626"/>
-        <circle cx="73" cy="34" r="6" fill="#ffd9b0"/>
-        <path d="M66 40q7-5 14 0v14H66z" fill="#2dff9a" opacity=".85"/>
-        <path d="M100 56l10-14" stroke="#e8edf6" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="62" cy="14" r="4" class="beacon"/>
-        <circle cx="46" cy="124" r="19" fill="#0b0f19" stroke="#3a455c" stroke-width="3"/>
-        <g class="wheel"><circle cx="46" cy="124" r="9" fill="#2a3346" stroke="#ffb020" stroke-width="2"/><path d="M46 115v18M37 124h18" stroke="#ffb020" stroke-width="2"/></g>
-        <circle cx="128" cy="128" r="14" fill="#0b0f19" stroke="#3a455c" stroke-width="3"/>
-        <g class="wheel"><circle cx="128" cy="128" r="6" fill="#2a3346" stroke="#ffb020" stroke-width="2"/><path d="M128 122v12M122 128h12" stroke="#ffb020" stroke-width="2"/></g>
-      </svg>
+      <div class="fk">
+        <img src="images/forklift-hero.png" alt="" width="1152" height="768" decoding="async">
+        <i class="whl w1"></i><i class="whl w2"></i>
+        <i class="beacon"></i>
+      </div>
       </div>
       <span class="exhaust"><i></i><i></i><i></i></span>
     </div>

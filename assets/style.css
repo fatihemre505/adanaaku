@@ -285,16 +285,17 @@ footer strong{color:var(--tx)}
 @keyframes dash{to{background-position:70px 0}}
 .fk-run{position:absolute;bottom:8px;left:0;width:var(--fw,230px);animation:drive 15s linear infinite;will-change:transform;animation-delay:-4s}
 .fk-run::after{content:"";position:absolute;left:8%;right:4%;bottom:-2px;height:12px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,106,26,.58),transparent);filter:blur(4px);opacity:.8}
-.fk{width:100%;height:auto;overflow:visible;filter:drop-shadow(0 12px 20px rgba(255,106,26,.38));will-change:filter}
-.fk-bob{animation:bob 600ms cubic-bezier(.45,.05,.55,.95) infinite alternate}
-@keyframes bob{to{transform:translateY(-2.2px)}}
-.fk .lift{animation:lift 7.8s cubic-bezier(.25,.46,.45,.94) infinite}
-@keyframes lift{0%,12%{transform:translateY(0)}35%,68%{transform:translateY(-48px)}92%,100%{transform:translateY(0)}}
-.fk .wheel{transform-box:fill-box;transform-origin:center;animation:roll 700ms linear infinite}
-@keyframes roll{to{transform:rotate(360deg)}}
-.fk .beacon{fill:var(--amber);animation:blink 1.2s steps(2,end) infinite;filter:drop-shadow(0 0 8px var(--amber))}
-@keyframes blink{48%{opacity:.12}50%{opacity:.8}98%{opacity:.8}}
-.exhaust{position:absolute;left:2%;bottom:48px}
+.fk{position:relative;width:100%;aspect-ratio:3/2;filter:drop-shadow(0 12px 20px rgba(255,106,26,.38));will-change:filter}
+.fk img{display:block;width:100%;height:100%;object-fit:contain;user-select:none}
+.fk-bob{transform-origin:50% 100%;animation:bob 600ms cubic-bezier(.45,.05,.55,.95) infinite alternate}
+@keyframes bob{to{transform:translateY(-2.2px) rotate(-.35deg)}}
+.fk .whl{position:absolute;aspect-ratio:1;border-radius:50%;translate:-50% -50%;background:repeating-conic-gradient(from 0deg,rgba(255,255,255,.2) 0 12deg,transparent 12deg 45deg);mix-blend-mode:screen;animation:roll 520ms linear infinite;will-change:transform}
+.fk .whl.w1{left:11.9%;top:82.9%;width:7.8%}
+.fk .whl.w2{left:54.4%;top:79%;width:12%}
+@keyframes roll{to{rotate:360deg}}
+.fk .beacon{position:absolute;left:13%;top:8%;width:3.2%;aspect-ratio:1;translate:-50% -50%;border-radius:50%;background:var(--amber);animation:blink 1.2s steps(2,end) infinite;box-shadow:0 0 14px 4px var(--amber)}
+@keyframes blink{48%{opacity:.12}50%{opacity:1}98%{opacity:1}}
+.exhaust{position:absolute;left:3%;bottom:26%}
 .exhaust i{position:absolute;width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.25);opacity:0;animation:puff 1.8s cubic-bezier(.25,.46,.45,.94) infinite}
 .exhaust i:nth-child(2){animation-delay:.6s}.exhaust i:nth-child(3){animation-delay:1.2s}
 @keyframes puff{0%{opacity:.55;transform:translate(0,0) scale(.35)}100%{opacity:0;transform:translate(-36px,-28px) scale(2.4)}}
