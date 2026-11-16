@@ -353,7 +353,7 @@ footer strong{color:var(--tx)}
   .hero .lead{font-size:.95rem}
   .cta-row{flex-wrap:nowrap}
   .cta-row .btn{flex:1 1 0;--p:13px 14px;font-size:.85rem;white-space:normal;text-align:center}
-  .lane{--lane:clamp(96px,15vh,125px)}
+  .lane{--lane:clamp(144px,22.5vh,188px)}
   .hero{padding-bottom:0}
 }
 @media (max-width:760px) and (max-height:700px){.hero .lead{display:none}.chip{display:none}}
